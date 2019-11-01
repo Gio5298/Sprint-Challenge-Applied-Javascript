@@ -20,4 +20,17 @@ function Header() {
     header.classList.add('header');
     date.classList.add('date');
     temp.classList.add('temp');
+
+    //added content
+    date.textContent = 'SMARCH 28, 2019';
+    headOne.textContent = 'Lambda Times';
+    temp.textContent = '98°';
+
+    //added structure
+    header.appendChild(date);
+    header.appendChild(headerOne);
+    header.appendChild(temp);
+
+    const container = document.querySelector('.header-container')
+    container.appendChild(header)
 }
