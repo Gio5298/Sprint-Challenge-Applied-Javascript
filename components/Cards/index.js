@@ -17,3 +17,25 @@
 // </div>
 //
 // Create a card for each of the articles and add the card to the DOM.
+
+//added axios
+axios.get("https://lambda-times-backend.herokuapp.com/articles")
+    .then((articles) => {
+       let lambArt= articles.data.articles;
+        console.log(lambArt)      
+        lambArt.bootstrap.forEach(element => {
+            document.querySelector('.cards-container').appendChild(cardCreator(element))})
+
+        lambArt.javascript.forEach(element => {
+            document.querySelector('.cards-container').appendChild(cardCreator(element))})
+
+        lambArt.jquery.forEach(element => {
+            document.querySelector('.cards-container').appendChild(cardCreator(element))})
+
+        lambArt.node.forEach(element => {
+            document.querySelector('.cards-container').appendChild(cardCreator(element))})
+
+        lambArt.technology.forEach(element => {
+            document.querySelector('.cards-container').appendChild(cardCreator(element))})
+
+        })
