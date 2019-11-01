@@ -30,13 +30,23 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the DOM?
 
+A: The (D)ocument (O)bject (M)odel is what gives Javascript the ability to display dynamic HTML. It can change the HTML and CSS.
+
 2. What is an event?
+
+A: Events are actions that the browser or user does just make an event like the name implies, an event.
 
 3. What is an event listener?
 
+A: An event listener attaches an event handler to a specific element. Adding actions like, 'click' or 'mouseenter' to make some minor changes      to the display.
+
 4. Why would we convert a NodeList into an Array?
 
+A: To Have easier access to the items in the NodeList and especially because a NodeList doesnt have the compatible feautures like 'Map',           'forEach'.
+
 5. What is a component?
+
+A: Components are reusable pieces of set behaviors and interface elements.
 
 ### Git Set up
 
