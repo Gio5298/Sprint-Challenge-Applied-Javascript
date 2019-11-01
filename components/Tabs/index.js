@@ -18,10 +18,20 @@ axios.get('https://lambda-times-backend.herokuapp.com/topics')
         const topicsOne = document.querySelector('.topics')
 
         lTopics.appendChild(newTab(element))
-        // tabs.appendChild(lTopics)
+        // tabs.appendChild(topicsOne)
         console.log(topicsOne)
 
     })})
     .catch((error) => {console.log(error)})
 
-    
+    //added function
+    function newTab (top) {
+        const tablet = document.createElement('div')
+        tablet.classList.add('tab')
+        tablet.textContent = top
+
+        // const topicsOne = document.querySelector('.topics')
+        // topicsOne.appendChild(tablet)
+
+        return tablet
+    } 
